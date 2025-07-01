@@ -1,0 +1,81 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="en">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Методология БЭМ</title>
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+		<link rel="stylesheet" href="./css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<!-- Отображаемое тело страницы -->
+	<body>
+		<!---------------- #hero --------------------------->
+		<header class="hero">
+			<div class="hero__body">
+				<h1 class="hero__logo logo logo--header">
+					<a href="http://google.com">
+						<img src="./img/Logo.png" alt="Binary company logo">
+					</a>
+				</h1>
+				<h2 class="hero__title title">
+					Clear, smart, attractive design
+					<span class="hero__title--smaller">for your app, logo, website</span>
+				</h2>
+				<a href="google.com" class="hero__read-more read-more">read more</a>
+				<a href="#about" class="hero__arrow-down">
+					<img class="arrow-down" src=".\img\hero\Arrow-down.png" alt="Arrow pointing down" />
+			 	</a>
+			</div>
+			<div class="hero__navigation"></div>
+		</header>
+		
+		<!---------------- #endhero --------------------------->
+		<section class="about" id="about">
+			<div class="about__body">
+				<div class="about__header">
+					<div class="about__title title">ABOUT</div>
+					<div class="about__text">We specialize in contemporary, functional, and stunning websites with design that really brings that "WOW" factor. 
+			In our design process, we make sure to stay one step ahead of the latest trends, 
+			never forgetting to abide by key web standards.</div>
+				</div>
+				<div class="about__row">
+					<div class="about__column">
+						<div class="item-about">
+							<div class="item-about__icon">
+								<img src="img/about/01.png" alt="" />
+							</div>
+							<div class="item-about__title">WEB</div>
+							<div class="item-about__text">We tend to deliver unique and functional design, through innovation and creativity.</div>
+						</div>
+					</div>
+					<div class="about__column">
+						<div class="item-about">
+							<div class="item-about__icon">
+								<img src="img/about/02.png" alt="" />
+							</div>
+							<div class="item-about__title">iOS AND ANDROID</div>
+							<div class="item-about__text">We seek to bring new businesses and customers closer together through valuable insights and proper targeting.</div>
+						</div>
+					</div>
+					<div class="about__column">
+						<div class="item-about">
+							<div class="item-about__icon">
+								<img src="img/about/03.png" alt="" />
+							</div>
+							<div class="item-about__title">MARKETING</div>
+							<div class="item-about__text">We’ll help you establish the right goals and build the right paths. Success depends on setting the right intention.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+	</body>
+</html>
