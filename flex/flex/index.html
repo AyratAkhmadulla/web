@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Первая верстка на Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <header class="hi">
+            <div class="container">
+                <div class="hi__row">
+                    <div class="hi__body">
+                        <h1 class="hidden-visibility">Это страница сверстана на флексах</h1>
+                        <div class="hi__title">Привет, друг!</div>
+                        <ul class="hi__list">
+                            <li>У тебя все получится!</li>
+                            <li>Никогда не сдавайся!</li>
+                            <li>Сегодня ты уже знаешь больше чем вчера!</li>
+                            <li>Спасибо тебе за поддержку!</li>
+                        </ul>
+                    </div>
+                    <div class="hi__logo">
+                        <img src="img/logo.png" alt="Логотип">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="what">
+            <div class="container">
+                <div class="what__row">
+                    <div class="what__picture">
+                        <img src="img/picture.png" alt="Схема Flexbox">
+                    </div>
+                    <div class="what__body">
+                        <h2>Что такое Flexbox?</h2>
+                        <p>Flexbox - это целый модуль, содержащий в себе набор свойств и их значений как для родителя flex-контейнера так и для его дочерних элементов flex-элементов.</p>
+                        <p>Основным преимуществом гибкой FLEX разметки является возможность изменять ширину/высоту пространство вокруг и порядок flex-элементов, для того чтобы наилучшим образом заполнить доступное пространство flex-контейнера</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="columns">
+            <div class="container">
+                <div class="columns__content">
+                    <div class="columns__title">Колонки с flex-контейнерами</div>
+                    <div class="columns__items">
+                        <div class="columns__item">
+                            <div class="columns__rectangle">
+                                <img src="img/grey-rect.png" alt="grey rectangle">
+                            </div>
+                            <div class="columns__body">
+                                <h3>The description for the image</h3>
+                                <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+                            </div>
+                        </div>
+                        <div class="columns__item">
+                            <div class="columns__rectangle">
+                                <img src="./img/grey-rect.png" alt="grey rectangle">
+                            </div>
+                            <div class="columns__body">
+                                <h3>The description for the image</h3>
+                                <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+                            </div>
+                        </div>
+                        <div class="columns__item">
+                            <div class="columns__rectangle">
+                                <img src="./img/grey-rect.png" alt="grey rectangle">
+                            </div>
+                            <div class="columns__body">
+                                <h3>The description for the image</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</p>
+                            </div>
+                        </div>
+                        <div class="columns__item">
+                            <div class="columns__rectangle">
+                                <img src="./img/grey-rect.png" alt="grey rectangle">
+                            </div>
+                            <div class="columns__body">
+                                <h3>The description for the image</h3>
+                                <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="vertical">
+            <div class="container">
+                <div class="vertical__content">
+                    <div class="vertical__title">Вертикальное выравнивание</div>
+                    <div class="vertical__row">
+                        <div class="card">
+                            <p class="card__im-happy">буду рад</p>
+                            <div class="card__action">подписке</div>
+                            <p class="card__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tenetur fugit vel, eligendi illum, placeat quo vero reiciendis consectetur.</p>
+                            <button type="button" class="card__btn">подписаться</button>
+                        </div>
+                        <div class="card">
+                            <div class="card__im-happy">буду рад</div>
+                            <div class="card__action">лайку</div>
+                            <p class="card__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tenetur fugit vel, eligendi illum, placeat quo vero reiciendis consectetur voluptatibus atque et itaque, hic, deleniti. Sunt commodi tempora voluptatum dolorum.<br><br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tenetur fugit vel, eligendi illum, placeat quo vero reiciendis consectetur tempora voluptatum dolorum.
+                            </p>
+                            <button type="button" class="card__btn">лайк</button>
+                        </div>
+                        <div class="card">
+                            <div class="card__im-happy">буду рад</div>
+                            <div class="card__action">комментарию</div>
+                            <p class="card__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tenetur fugit vel, eligendi illum, placeat quo vero reiciendis consectetur.</p>
+                            <button type="button" class="card__btn">комментировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer__row">
+            <div class="footer__text">
+                Фрилансер по жизни 2019
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
