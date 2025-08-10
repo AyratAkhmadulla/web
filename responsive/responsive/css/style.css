@@ -225,6 +225,11 @@ h6 {
 	font-weight: 700;
 	text-align: center;
 }
+.about__title--add-time::after {
+	content: "  /  35 min";
+	font-size: 14;
+	font-weight: 400;
+}
 
 .about__content {
 	max-width: 1080px;
@@ -235,6 +240,12 @@ h6 {
 	font-weight: 400;
 	text-align: center;
 }
+.about__content--italic {
+	max-width: 1060px;
+	font-size: 24px;
+	font-style: italic;
+}
+
 
 /* ----------------------- Bycicles --------------------------- */
 .bycicles {
