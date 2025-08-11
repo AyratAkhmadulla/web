@@ -246,7 +246,6 @@ h6 {
 	font-style: italic;
 }
 
-
 /* ----------------------- Bycicles --------------------------- */
 .bycicles {
 	margin-bottom: -3px;
@@ -255,10 +254,18 @@ h6 {
 	align-items: stretch;
 	background-color: #f7f7f7;
 }
-.bycicles__picture {
+
+.bycicles__picture-big {
 	flex: 2;
 }	
-.bycicles__picture img {
+.bycicles__picture-big img {
+	width: 100%;
+	height: auto;
+}
+.bycicles__picture-small {
+	flex: 1;
+}
+.bycicles__picture-small img {
 	width: 100%;
 	height: auto;
 }
@@ -266,3 +273,12 @@ h6 {
 .bycicles__block {
 	flex: 1;
 }
+@media (max-width:533px) {
+	.header__image img{
+		opacity: 0.3;
+	}
+}
+
+
+
+
