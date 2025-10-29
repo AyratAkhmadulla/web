@@ -1,39 +1,171 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 	<head>
-		<!-- Заголовок страницы в браузере -->
 		<title>GRID LAYOUT - Практика</title>
-		<!-- Подключаем CSS -->
 		<link rel="stylesheet" href="css/style.css">
-		<!-- Кодировка страницы -->
 		<meta charset="UTF-8">
-		<!-- Адаптив -->
 		<meta name="viewport" content="width=device-width">
 	</head>
-	<!-- Отображаемое тело страницы -->
 	<body>
-		<!-- Оболочка (grid-контейнер) -->
 		<div class="wrapper">
-			<!-- Шапка (grid - элемент) -->
 			<header class="header">
 				<div class="header__logo"></div>
-				<nav class="header__menu menu">
-					<ul class="menu">
-						<li class="menu__item"></li>
-						<li class="menu__item"></li>
-						<li class="menu__item"></li>
-						<li class="menu__item"></li>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li class="header__link">пункт меню</li>
+						<li class="header__link">пункт меню</li>
+						<li class="header__link">пункт меню</li>
+						<li class="header__link">пункт меню</li>
 					</ul>
 				</nav>
+			
 			</header>
-			<!-- Контент (grid-элемент + grid-контейнер) -->
 			<main class="main">
+				<aside class="sidebar">
+					<nav class="sidebar__menu">
+						<ul class="sidebar__list">
+							<li class="side__link"><a href="#">Пункт меню</a></li>
+							<li class="side__link"><a href="#">Пункт меню</a></li>
+							<li class="side__link"><a href="#">Пункт меню</a></li>
+							<li class="side__link"><a href="#">Пункт меню</a></li>
+							<li class="side__link"><a href="#">Пункт меню</a></li>
+						</ul>
+					</nav>
+				</aside>
+				<section class="content">
+					<h1 class="title">GRID Layout - Практика</h1>
+					<div class="content__gallery gallery">
+						<h2 class="gallery__subtitle">Галерея</h2>
+						<div class="gallery__items">
+							<div class="gallery__item item--big">
+								<img src="img/01.jpg" alt="" class="img">
+							</div>
+							<div class="gallery__item">
+								<img src="img/02.jpg" alt="" class="img">
+							</div>
+							<div class="gallery__item">
+								<img src="img/03.jpg" alt="" class="img">
+							</div>
+							<div class="gallery__item">
+								<img src="img/04.jpg" alt="" class="img">
+							</div>
+							<div class="gallery__item">
+								<img src="img/05.jpg" alt="" class="img">
+							</div>
+							<div class="gallery__item">
+								<img src="img/06.jpg" alt="" class="img">
+							</div>
+							<div class="gallery__item">
+								<img src="img/07.jpg" alt="" class="img">
+							</div>
+							<div class="gallery__item item--big">
+								<img src="img/08.jpg" alt="" class="img">
+							</div>
+							<div class="gallery__item">
+								<img src="img/09.jpg" alt="" class="img">
+							</div>
+							<div class="gallery__item">
+								<img src="img/10.jpg" alt="" class="img">
+							</div>
+						</div>
+					</div>
+					<div class="content__goods goods">
+						<h2 class="subtitle">Товары</h2>
+						.<div class="goods__items">
+							<div class="goods__item card">
+								<div class="card__pic">
+									<img src="img/fls.jpg" alt="" class="img">
+								</div>
+								<p class="card__info">
+									Футболка "Живи, а работай в свободное время!"
+								</p>
+								<button class="card__btn">
+									Купить
+								</button>
+							</div>
+							<div class="goods__item card">
+								<div class="card__pic">
+									<img src="img/fls.jpg" alt="" class="img">
+								</div>
+								<p class="card__info">
+									Футболка "Живи, а работай в свободное время!"
+								</p>
+								<button class="card__btn">
+									Купить
+								</button>
+							</div>
+							<div class="goods__item card">
+								<div class="card__pic">
+									<img src="img/fls.jpg" alt="" class="img">
+								</div>
+								<p class="card__info">
+									Футболка "Живи, а работай в свободное время!"
+								</p>
+								<button class="card__btn">
+									Купить
+								</button>
+							</div>
+							<div class="goods__item card">
+								<div class="card__pic">
+									<img src="img/fls.jpg" alt="" class="img">
+								</div>
+								<p class="card__info">
+									Футболка "Живи, а работай в свободное время!"
+								</p>
+								<button class="card__btn">
+									Купить
+								</button>
+							</div>
+							<div class="goods__item card">
+								<div class="card__pic">
+									<img src="img/fls.jpg" alt="" class="img">
+								</div>
+								<p class="card__info">
+									Футболка "Живи, а работай в свободное время!"
+								</p>
+								<button class="card__btn">
+									Купить
+								</button>
+							</div>
+							<div class="goods__item card">
+								<div class="card__pic">
+									<img src="img/fls.jpg" alt="" class="img">
+								</div>
+								<p class="card__info">
+									Футболка "Живи, а работай в свободное время!"
+								</p>
+								<button class="card__btn">
+									Купить
+								</button>
+							</div>
+							<div class="goods__item card">
+								<div class="card__pic">
+									<img src="img/fls.jpg" alt="" class="img">
+								</div>
+								<p class="card__info">
+									Футболка "Живи, а работай в свободное время!"
+								</p>
+								<button class="card__btn">
+									Купить
+								</button>
+							</div>
+							<div class="goods__item card">
+								<div class="card__pic">
+									<img src="img/fls.jpg" alt="" class="img">
+								</div>
+								<p class="card__info">
+									Футболка "Живи, а работай в свободное время!"
+								</p>
+								<button class="card__btn">
+									Купить
+								</button>
+							</div>
+					</div>
+				</section>
 			</main>
 			<footer class="footer">
-
+				<p class="footer__copy">© 2025</p>
+				<p class="footer__info">lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</footer>	
 				
 	</body>
