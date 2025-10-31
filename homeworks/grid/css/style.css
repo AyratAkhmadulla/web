@@ -133,10 +133,13 @@ body {
 	margin-bottom: 60px;
 }
 .content__gallery {
+	display: block;
 }
 .gallery {
+	display: block;
 }
 .gallery__subtitle {
+	display: block;
 }
 .gallery__items {
 	display: grid;
@@ -159,8 +162,10 @@ body {
 	grid-row: span 2;
 }
 .content__goods {
+	display: block;
 }
 .goods {
+	display: block;
 }
 .subtitle {
 	margin-bottom: 23px;
@@ -172,10 +177,10 @@ body {
 	column-gap: 50px;
 }
 .goods__item {
-	
+	display: block;
 }
 .card {
-	
+	display: block;
 }
 .card p {
     font-size: 20px;
