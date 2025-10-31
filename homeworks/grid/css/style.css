@@ -45,7 +45,7 @@ body {
 .header {
 	grid-area: header;
 	display: grid;
-	grid-template: 1fr / 1fr minmax(250px,1fr) minmax(1150px,1fr) 1fr;
+	grid-template: 1fr / 1fr minmax(auto, 250px) minmax(auto, 1150px) 1fr;
 	align-items: center;
 	background-color: rgb(121, 79, 69);
 	padding: 15px 1rem;
@@ -80,22 +80,37 @@ body {
 		justify-self: end;
 	}
 }
+
 .main {
 	grid-area: main;
 	display: grid;
-	grid-template: 1fr / 1fr minmax(300px, 1fr) minmax(1100px, 1fr) 1fr;
 	align-items: center;
 	padding: 30px 15px;
 }
+@media (min-width: 771px) {
+	.main {
+		grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+	}
+	.sidebar {
+		grid-column: 2 / 3;	
+	}
+	.content {
+		grid-column: 3 / 4;
+	}
+
+}
 .sidebar {
-	grid-column: 2/3;
+	width: 100%;
 	height: 100%;
 	background-color: #7a956b;
 	padding: 20px;
 }
-.sidebar__menu {
-	
-}
+@media (min-width: 771px) {
+	.sidebar {
+		padding: 15px;
+	}
+} 
+
 .sidebar__list {
 	display: grid;
 }
@@ -107,7 +122,12 @@ body {
 	font-size: 1.2rem;
 }
 .content {
-	padding-left: 30px;
+	padding: 15px;
+}
+@media (min-width: 771px) {
+	.content {
+		padding: 30px;
+	}
 }
 .title {
 	margin-bottom: 60px;
@@ -121,8 +141,8 @@ body {
 .gallery__items {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 10px;
-	margin-bottom: 38px;
+	column-gap: 10px;
+	row-gap: 38px;
 }
 .gallery__item {
 	position: relative;
@@ -184,7 +204,7 @@ body {
 .footer {
 	grid-area: footer;
 	display: grid;
-	grid-template: 1fr / 1fr minmax(300px, 1fr) minmax(1100px, 1fr) 1fr;
+	grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
 	align-items: center;
 	background-color: rgb(119, 96, 141);
 	padding: 15px 1rem;
